@@ -1,0 +1,50 @@
+/* sass queries */
+
+@mixin media-min($_480px) {
+    @media screen and (min-width: $_480px) {
+        &{ @content; }
+    }
+}
+
+@mixin media-min($_768px) {
+    @media screen and (min-width: $_768px) {
+        &{ @content; }
+    }
+}
+
+@mixin media-min($_1024px) {
+    @media screen and (min-width: $_1024px) {
+        &{ @content; }
+    }
+}
+
+// What is the media type?
+$sq-media: "all";
+// Enable (or not) a small tag displaying your current breakpoint
+$sq-debug: false;
+// Use mobile first or not
+$sq-mobile-first: true;
+
+body
+{
+    @include media-min(480px) {
+        margin: auto;
+        color: aqua;
+    }
+}
+
+body
+{
+    @include media-min(768px) {
+        margin: auto;
+        color: rgb(255, 0, 191);
+    }
+}
+
+body
+{
+    @include media-min(1024px) {
+        margin: auto;
+        color: rgb(217, 255, 0);
+    }
+}

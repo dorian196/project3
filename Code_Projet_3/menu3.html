@@ -3,47 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=480, initial-scale=1">
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="stylesheet" href="./public/css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Ohmyfood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+    <title>A la francaise</title>
 </head>
 <body>
     <header>
-        <a href="./index.html"><i class="fa-solid fa-arrow-left"></i></a><img src="./public/img/logo/ohmyfood.png" alt="logo ohmyfood">
+        <div class="headmenu">
+            <div class="arrow">
+                <a href="./index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="logomenu">
+                <img src="./public/img/logo/ohmyfood.png" alt="logo ohmyfood">
+            </div>
+        </div>
     </header>
     <main>
         <div class="banniere">
-            <img src="#" alt="">
+            <img src="./public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
         </div>
         <section>
-            <h1>A la francaise</h1><i></i>
-            <p>Entrées</p>
-            <ul>
-                <li><a href="#"><h2>Tartare de poulpe acidulé</h2>Aux zests d'orange<p>25</p></a></li>
-                <li><a href="#"><h2>Velouté de légumes d'antan</h2>Carotte, panais, topinambour<p>35</p></a></li>
-                <li><a href="#"><h2>Soupe à l'ognion</h2>Revisitée<p>20</p></a></li>
-            </ul>
-            <p>Plats</p>
-            <ul>
-                <li><a href="#"><h2>Coquilles Saint-Jacques</h2>Accompagnées d'une purée de panais<p>40</p></a></li>
-                <li><a href="#"><h2>Magret de canard</h2>Et parmentier de pomme de terre<p>35</p></a></li>
-                <li><a href="#"><h2>Pigeonneau d'Ille-et-Vilaine</h2>Surson lit de gnocchis aux légumes<p>44</p></a></li>
-            </ul>
-            <p>Desserts</p>
-            <ul>
-                <li><a href="#"><h2>Pétales de violettes glacés</h2>Et purée de noisettes<p>18</p></a></li>
-                <li><a href="#"><h2>Fondant au chocolat</h2>Revisité<p>22</p></a></li>
-                <li><a href="#"><h2>Millefeuille croustillant</h2>Myrtilles et pate d'amande<p>23</p></a></li>
-            </ul>
+            <div class="sectionmenu">
+                <div class="titremenu">
+                    <h1>A la francaise</h1><i class="fa-solid fa-heart"></i>
+                </div>
+                <h2>Entrées</h2>
+                <ul>
+                    <li><a href="#"><h3>Tartare de poulpe acidulé</h3>Aux zests d'orange<p>25</p></a></li>
+                    <li><a href="#"><h3>Velouté de légumes d'antan</h3>Carotte, panais, topinambour<p>35</p></a></li>
+                    <li><a href="#"><h3>Soupe à l'ognion</h3>Revisitée<p>20</p></a></li>
+                </ul>
+                <h2>Plats</h2>
+                <ul>
+                    <li><a href="#"><h3>Coquilles Saint-Jacques</h3>Accompagnées d'une purée de panais<p>40</p></a></li>
+                    <li><a href="#"><h3>Magret de canard</h3>Et parmentier de pomme de terre<p>35</p></a></li>
+                    <li><a href="#"><h3>Pigeonneau d'Ille-et-Vilaine</h3>Surson lit de gnocchis aux légumes<p>44</p></a></li>
+                </ul>
+                <h2>Desserts</h2>
+                <ul>
+                    <li><a href="#"><h3>Pétales de violettes glacés</h3>Et purée de noisettes<p>18</p></a></li>
+                    <li><a href="#"><h3>Fondant au chocolat</h3>Revisité<p>22</p></a></li>
+                    <li><a href="#"><h3>Millefeuille croustillant</h3>Myrtilles et pate d'amande<p>23</p></a></li>
+                </ul>
+                <div class="btn_command">
+                    <a href="#">Commander</a>
+                </div>
+            </div>
         </section>
-        <div class="btn_command">
-            <a href="#">Commander</a>
-        </div>
     </main>
     <footer>
-        <img src="./public/img/logo/ohmyfood.png" alt="logo ohmyfood">
+        <h3>ohmyfood</h3>
         <ul>
             <li><a href="#"><i></i>Proposer un restaurant</a></li>
             <li><a href="#"><i></i>Devenir partenaire</a></li>

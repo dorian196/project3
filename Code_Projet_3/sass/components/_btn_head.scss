@@ -1,0 +1,15 @@
+/* btn_head */
+
+.btn_head
+{
+    border: solid 1px transparent;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px 3px rgb(220, 220, 220);
+    background-color: $color_primaire;
+    color: white;
+    width: 250px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+}

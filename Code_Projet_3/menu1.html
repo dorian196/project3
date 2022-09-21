@@ -3,49 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=480, initial-scale=1">
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="stylesheet" href="./public/css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Ohmyfood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+    <title>La palette du gout</title>
 </head>
 <body>
     <header>
-        <div>
-            <a href="./index.html"><i class="fa-solid fa-arrow-left"></i></a><img src="./public/img/logo/ohmyfood.png" alt="logo ohmyfood">
+        <div class="headmenu">
+            <div class="arrow">
+                <a href="./index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="logomenu">
+                <img src="./public/img/logo/ohmyfood.png" alt="logo ohmyfood">
+            </div>
         </div>
     </header>
     <main>
         <div class="banniere">
-            <img src="#" alt="">
+            <img src="./public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant La palette du gout">
         </div>
         <section>
-            <h1>La palette du gout</h1><i></i>
-            <p>Entrées</p>
-            <ul>
-                <li><a href="#"><h2>Fricassée d'escargot</h2>Au piment d'espelette<p>25</p></a></li>
-                <li><a href="#"><h2>Foie gras de canard mi-cuit</h2>Et ses copeaux de truffe noire<p>35</p></a></li>
-                <li><a href="#"><h2>Oeuf au plat</h2>Assaisonné à la truff sur lit de...<p>20</p></a></li>
-            </ul>
-            <p>Plats</p>
-            <ul>
-                <li><a href="#"><h2>Filet de boeuf aux herbes</h2>Accompagnées de sa ribambelle de légu...<p>40</p></a></li>
-                <li><a href="#"><h2>Parmentier de queue de boeuf</h2>A la truff sur sa purée de panais<p>35</p></a></li>
-                <li><a href="#"><h2>Filet de Turbot</h2>Aux agrumes<p>44</p></a></li>
-            </ul>
-            <p>Desserts</p>
-            <ul>
-                <li><a href="#"><h2>Paris-Brest</h2>Revisité<p>18</p></a></li>
-                <li><a href="#"><h2>Macaron au chocolat d'exception</h2>et glace à la vanille de Madagascar<p>22</p></a></li>
-                <li><a href="#"><h2>Mousse au chocolat</h2>Au pimznt d'espelette et à la truffe noire<p>23</p></a></li>
-            </ul>
+            <div class="sectionmenu">
+                <div class="titremenu">
+                <h1 class="test">La palette du gout</h1><i class="fa-solid fa-heart"></i>
+                </div>
+                <h2>Entrées</h2>
+                <ul>
+                    <li><a href="#"><h3>Fricassée d'escargot</h3>Au piment d'espelette<p>25</p></a></li>
+                    <li><a href="#"><h3>Foie gras de canard mi-cuit</h3>Et ses copeaux de truffe noire<p>35</p></a></li>
+                    <li><a href="#"><h3>Oeuf au plat</h3>Assaisonné à la truff sur lit de...<p>20</p></a></li>
+                </ul>
+                <h2>Plats</h2>
+                <ul>
+                    <li><a href="#"><h3>Filet de boeuf aux herbes</h3>Accompagnées de sa ribambelle de légu...<p>40</p></a></li>
+                    <li><a href="#"><h3>Parmentier de queue de boeuf</h3>A la truff sur sa purée de panais<p>35</p></a></li>
+                    <li><a href="#"><h3>Filet de Turbot</h3>Aux agrumes<p>44</p></a></li>
+                </ul>
+                <h2>Desserts</h2>
+                <ul>
+                    <li><a href="#"><h3>Paris-Brest</h3>Revisité<p>18</p></a></li>
+                    <li><a href="#"><h3>Macaron au chocolat d'exception</h3>et glace à la vanille de Madagascar<p>22</p></a></li>
+                    <li><a href="#"><h3>Mousse au chocolat</h3>Au pimznt d'espelette et à la truffe noire<p>23</p></a></li>
+                </ul>
+                <div class="btn_command">
+                    <a href="#">Commander</a>
+                </div>
+            </div>
         </section>
-        <div class="btn_command">
-            <a href="#">Commander</a>
-        </div>
     </main>
     <footer>
-        <img src="./public/img/logo/ohmyfood.png" alt="logo ohmyfood">
+        <h3>ohmyfood</h3>
         <ul>
             <li><a href="#"><i></i>Proposer un restaurant</a></li>
             <li><a href="#"><i></i>Devenir partenaire</a></li>

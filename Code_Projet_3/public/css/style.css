@@ -1,6 +1,326 @@
-.container_menu img
-{
-    width: 300px;
-    height: 150px;
-    object-fit: cover;
+/* base */ /* Base */
+html {
+  width: 100%;
 }
+
+* {
+  /* Set border-box as the global default */
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Topography */
+h1, footer h3 {
+  font-family: "Shrikhand", cursive, sans-serif;
+  font-weight: 550;
+}
+
+p, h2, h3, .sectionmenu h2, .sectionmenu li {
+  font-family: "Roboto", sans-serif;
+}
+
+.sectionmenu h2 {
+  text-transform: uppercase;
+}
+
+/* utils */
+/* variable */ /* sass queries */
+@media screen and (min-width: 480px) {
+  body {
+    margin: auto;
+    color: aqua;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: auto;
+    color: rgb(255, 0, 191);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    margin: auto;
+    color: rgb(217, 255, 0);
+  }
+}
+
+/* layouts */
+/* header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+header img {
+  width: 35%;
+}
+
+/* div */
+.top {
+  border: 1px solid transparent;
+  background-color: rgb(251, 251, 251);
+  height: 250px;
+}
+
+.txttop {
+  text-align: center;
+}
+
+/* form */
+form {
+  text-align: center;
+  border: 1px solid transparent;
+  height: 30px;
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0 -4px 3px -2px rgb(194, 194, 194);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  border: none;
+  width: 100px;
+  background-color: rgb(240, 240, 240);
+}
+
+/* fonction */
+.fonction {
+  margin-left: -25px;
+}
+
+.titre_fonction {
+  margin-left: 30px;
+}
+
+.fonction li {
+  border: 1px solid transparent;
+  border-radius: 35px;
+  background-color: rgb(250, 250, 250);
+  box-shadow: 0 2px 5px 3px rgb(240, 240, 240);
+  width: 435px;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.fonction span {
+  font-size: 20px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 2px 8px 2px 8px;
+  color: white;
+  background-color: #9356DC;
+  margin-right: 25px;
+  margin-left: -15px;
+}
+
+.fonction i {
+  margin-right: 20px;
+  color: gray;
+}
+
+/* Section */
+.container_menu img {
+  width: 452px;
+  height: 226px;
+  object-fit: cover;
+  border: 1px solid transparent;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.container_menu i {
+  font-size: 25px;
+  color: rgb(230, 230, 230);
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 30px;
+  right: 20px;
+}
+
+.container_menu li {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background-color: rgb(250, 250, 250);
+  box-shadow: 0 2px 5px 3px rgb(240, 240, 240);
+  margin-top: 50px;
+  width: 452px;
+}
+
+section h2 {
+  margin-left: 40px;
+}
+
+section h3, section p {
+  margin-bottom: -10px;
+  margin-left: 10px;
+}
+
+section {
+  margin-left: -42px;
+}
+
+/* footer */
+footer {
+  background-color: rgb(60, 60, 60);
+  width: 452px;
+}
+
+footer a {
+  color: white;
+}
+
+footer h3 {
+  margin-left: 30px;
+}
+
+footer li {
+  margin-left: -10px;
+  margin-bottom: 5px;
+}
+
+.fa-handshake-angle {
+  font-size: 11px;
+  margin-right: 8px;
+}
+
+.fa-utensils {
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+/* components */
+/* btn_head */
+.btn_head {
+  border: solid 1px transparent;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px 3px rgb(220, 220, 220);
+  background-color: #9356DC;
+  color: white;
+  width: 250px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.btn_command {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  margin: auto;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px 3px rgb(220, 220, 220);
+  background-color: #FF79DA;
+  padding: 10px 0 10px 0;
+  margin-bottom: 20px;
+}
+
+.btn_command a {
+  color: white;
+  font-size: 15px;
+}
+
+/* pages */
+/* Menu1 */
+.headmenu {
+  display: flex;
+  margin-top: 20px;
+}
+
+.arrow {
+  font-size: 20px;
+}
+
+.logomenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banniere img {
+  margin-top: 20px;
+  width: 452px;
+  height: 226px;
+}
+
+.titremenu {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 -30px 0;
+}
+
+.sectionmenu .fa-heart {
+  font-size: 30px;
+  margin: 20px 20px 0 0;
+  color: rgb(230, 230, 230);
+}
+
+.sectionmenu {
+  border: 1px solid transparent;
+  border-radius: 40px;
+  background-color: rgb(245, 245, 245);
+  margin-left: 40px;
+  position: relative;
+  bottom: 40px;
+}
+
+.sectionmenu h1, .sectionmenu h2 {
+  margin-left: 15px;
+}
+
+.sectionmenu h2 {
+  font-size: 20px;
+  margin-top: 50px;
+  border-bottom: 3px solid #99E2D0;
+  width: 50px;
+}
+
+.sectionmenu h3 {
+  margin: 10px 0 5px 0;
+}
+
+.sectionmenu li {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 5px 3px rgb(230, 230, 230);
+  margin: 0 5px 20px -35px;
+  padding-left: 10px;
+}
+
+.sectionmenu p {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 35px;
+  right: 25px;
+}
+
+/* themes */
+/* vendors */
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+.btn_command
+{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    margin: auto;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px 3px rgb(220, 220, 220);
+    background-color: $color_secondaire;
+    padding: 10px 0 10px 0;
+    margin-bottom: 20px;
+}
+
+.btn_command a
+{
+    color: white;
+    font-size: 15px;
+}

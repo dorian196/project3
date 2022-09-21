@@ -1,0 +1,86 @@
+/* Menu1 */
+
+.headmenu
+{
+    display: flex;
+    margin-top: 20px;
+}
+
+.arrow
+{
+    font-size: 20px;
+}
+
+.logomenu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banniere img
+{
+    margin-top: 20px;
+    width: 452px;
+    height: 226px;
+}
+
+.titremenu
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 -30px 0;
+}
+
+.sectionmenu .fa-heart
+{
+    font-size: 30px;
+    margin: 20px 20px 0 0;
+    color: rgb(230, 230, 230);
+}
+
+.sectionmenu
+{
+    border: 1px solid transparent;
+    border-radius: 40px;
+    background-color: rgb(245, 245, 245);
+    margin-left: 40px;
+    position: relative;
+    bottom: 40px;
+}
+
+.sectionmenu h1, .sectionmenu h2
+{
+    margin-left: 15px;
+}
+
+.sectionmenu h2
+{
+    font-size: 20px;
+    margin-top: 50px;
+    border-bottom: 3px solid $color_tertiaire;
+    width: 50px;
+}
+
+.sectionmenu h3
+{
+    margin: 10px 0 5px 0;
+}
+
+.sectionmenu li
+{
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 5px 3px rgb(230, 230, 230);
+    margin: 0 5px 20px -35px;
+    padding-left: 10px;
+}
+
+.sectionmenu p
+{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 35px; right: 25px;
+}

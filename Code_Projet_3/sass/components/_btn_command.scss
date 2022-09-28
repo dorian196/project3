@@ -10,10 +10,10 @@
     background-color: $color_secondaire;
     padding: 10px 0 10px 0;
     margin-bottom: 20px;
-}
+    background: linear-gradient($color_secondaire, $color_primaire);
 
-.btn_command a
-{
-    color: white;
-    font-size: 15px;
+    & a {
+        color: white;
+        font-size: 15px;    
+    }
 }

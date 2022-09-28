@@ -3,42 +3,39 @@
 .fonction
 {
     margin-left: -25px;
+
+    & li {
+        border: 1px solid transparent;
+        border-radius: 35px;
+        background-color: rgb(250, 250, 250);
+        box-shadow: 0 2px 5px 3px rgb(240, 240, 240);
+        width: 435px;
+        height: 100px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 15px;    
+    }
+
+    & span {
+        font-size: 20px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        padding: 2px 8px 2px 8px;
+        color: white;
+        background-color: $color-primaire;
+        margin-right: 25px;
+        margin-left: -15px;    
+    }
+
+    & i {
+        margin-right: 20px;
+        color: gray;   
+    }
 }
 
 .titre_fonction
 {
     margin-left: 30px;
-}
-
-.fonction li
-{
-    border: 1px solid transparent;
-    border-radius: 35px;
-    background-color: rgb(250, 250, 250);
-    box-shadow: 0 2px 5px 3px rgb(240, 240, 240);
-    width: 435px;
-    height: 100px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 20px;
-    font-size: 15px;
-}
-
-.fonction span
-{
-    font-size: 20px;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    padding: 2px 8px 2px 8px;
-    color: white;
-    background-color: $color-primaire;
-    margin-right: 25px;
-    margin-left: -15px;
-}
-
-.fonction i
-{
-    margin-right: 20px;
-    color: gray;
 }

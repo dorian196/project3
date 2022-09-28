@@ -1,39 +1,33 @@
 /* base */ /* Base */
-html {
-  width: 100%;
-}
-
 * {
   /* Set border-box as the global default */
   box-sizing: border-box;
 }
-
-body {
+* html {
+  width: 100%;
+}
+* body {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-a {
+* a {
   text-decoration: none;
   color: black;
 }
-
-ul {
+* ul {
   list-style: none;
 }
 
 /* Topography */
-h1, footer h3 {
+* h1, * footer h3 {
   font-family: "Shrikhand", cursive, sans-serif;
   font-weight: 550;
 }
-
-p, h2, h3, .sectionmenu h2, .sectionmenu li {
+* p, * h2, * h3, * .sectionmenu h2, * .sectionmenu li {
   font-family: "Roboto", sans-serif;
 }
-
-.sectionmenu h2 {
+* .sectionmenu h2 {
   text-transform: uppercase;
 }
 
@@ -42,21 +36,18 @@ p, h2, h3, .sectionmenu h2, .sectionmenu li {
 @media screen and (min-width: 480px) {
   body {
     margin: auto;
-    color: aqua;
   }
 }
 
 @media screen and (min-width: 768px) {
   body {
     margin: auto;
-    color: rgb(255, 0, 191);
   }
 }
 
 @media screen and (min-width: 1024px) {
   body {
     margin: auto;
-    color: rgb(217, 255, 0);
   }
 }
 
@@ -68,7 +59,6 @@ header {
   align-items: center;
   height: 40px;
 }
-
 header img {
   width: 35%;
 }
@@ -106,11 +96,6 @@ input {
 .fonction {
   margin-left: -25px;
 }
-
-.titre_fonction {
-  margin-left: 30px;
-}
-
 .fonction li {
   border: 1px solid transparent;
   border-radius: 35px;
@@ -124,7 +109,6 @@ input {
   margin-top: 20px;
   font-size: 15px;
 }
-
 .fonction span {
   font-size: 20px;
   border: 1px solid transparent;
@@ -135,10 +119,13 @@ input {
   margin-right: 25px;
   margin-left: -15px;
 }
-
 .fonction i {
   margin-right: 20px;
   color: gray;
+}
+
+.titre_fonction {
+  margin-left: 30px;
 }
 
 /* Section */
@@ -150,7 +137,6 @@ input {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-
 .container_menu i {
   font-size: 25px;
   color: rgb(230, 230, 230);
@@ -160,7 +146,6 @@ input {
   bottom: 30px;
   right: 20px;
 }
-
 .container_menu li {
   border: 1px solid transparent;
   border-radius: 20px;
@@ -170,17 +155,15 @@ input {
   width: 452px;
 }
 
+section {
+  margin-left: -42px;
+}
 section h2 {
   margin-left: 40px;
 }
-
 section h3, section p {
   margin-bottom: -10px;
   margin-left: 10px;
-}
-
-section {
-  margin-left: -42px;
 }
 
 /* footer */
@@ -188,15 +171,13 @@ footer {
   background-color: rgb(60, 60, 60);
   width: 452px;
 }
-
 footer a {
   color: white;
 }
-
 footer h3 {
   margin-left: 30px;
+  color: white;
 }
-
 footer li {
   margin-left: -10px;
   margin-bottom: 5px;
@@ -224,6 +205,7 @@ footer li {
   margin: auto;
   display: flex;
   justify-content: center;
+  background: linear-gradient(#FF79DA, #9356DC);
 }
 
 .btn_command {
@@ -237,8 +219,8 @@ footer li {
   background-color: #FF79DA;
   padding: 10px 0 10px 0;
   margin-bottom: 20px;
+  background: linear-gradient(#FF79DA, #9356DC);
 }
-
 .btn_command a {
   color: white;
   font-size: 15px;
@@ -273,12 +255,6 @@ footer li {
   margin: 20px 0 -30px 0;
 }
 
-.sectionmenu .fa-heart {
-  font-size: 30px;
-  margin: 20px 20px 0 0;
-  color: rgb(230, 230, 230);
-}
-
 .sectionmenu {
   border: 1px solid transparent;
   border-radius: 40px;
@@ -287,37 +263,63 @@ footer li {
   position: relative;
   bottom: 40px;
 }
-
+.sectionmenu .fa-heart {
+  font-size: 30px;
+  margin: 20px 20px 0 0;
+  color: rgb(230, 230, 230);
+}
 .sectionmenu h1, .sectionmenu h2 {
   margin-left: 15px;
 }
-
 .sectionmenu h2 {
   font-size: 20px;
   margin-top: 50px;
   border-bottom: 3px solid #99E2D0;
   width: 50px;
 }
-
 .sectionmenu h3 {
   margin: 10px 0 5px 0;
 }
-
 .sectionmenu li {
   border: 1px solid transparent;
   border-radius: 20px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 2px 5px 3px rgb(230, 230, 230);
   margin: 0 5px 20px -35px;
-  padding-left: 10px;
+  padding: 11px 0 11px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionmenu li:hover > .anim_check {
+  transform: scaleX(1);
+}
+.sectionmenu li:hover > p {
+  transform: scaleX(1);
+}
+.sectionmenu p {
+  margin-right: 80px;
+  transform: translateX(70px);
+  transition: transform 1s;
+  font-weight: bold;
 }
 
-.sectionmenu p {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  bottom: 35px;
-  right: 25px;
+.anim_check {
+  border: 1px solid #99E2D0;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #99E2D0;
+  padding: 30px 20px 30px 20px;
+  transform: scaleX(0);
+  transition: transform 1s;
+  transform-origin: right;
+  position: absolute;
+  right: 5px;
+}
+.anim_check i {
+  color: white;
+  font-size: 20px;
 }
 
 /* themes */

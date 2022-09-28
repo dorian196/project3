@@ -29,7 +29,6 @@ body
 {
     @include media-min(480px) {
         margin: auto;
-        color: aqua;
     }
 }
 
@@ -37,7 +36,6 @@ body
 {
     @include media-min(768px) {
         margin: auto;
-        color: rgb(255, 0, 191);
     }
 }
 
@@ -45,6 +43,5 @@ body
 {
     @include media-min(1024px) {
         margin: auto;
-        color: rgb(217, 255, 0);
     }
 }

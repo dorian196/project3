@@ -7,9 +7,7 @@ header
     align-items: center;
     height: 40px;
     
-}
-
-header img
-{
-    width: 35%;
+    & img {
+        width: 35%;    
+    }
 }

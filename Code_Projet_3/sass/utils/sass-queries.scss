@@ -1,7 +1,8 @@
 /* sass queries */
 
-@mixin media-min($_480px) {
-    @media screen and (min-width: $_480px) {
+
+@mixin media-min($_1024px) {
+    @media screen and (min-width: $_1024px) {
         &{ @content; }
     }
 }
@@ -12,8 +13,14 @@
     }
 }
 
-@mixin media-min($_1024px) {
-    @media screen and (min-width: $_1024px) {
+@mixin media-min($_480px) {
+    @media screen and (min-width: $_480px) {
+        &{ @content; }
+    }
+}
+
+@mixin media-max($_520px) {
+    @media screen and (max-width: $_520px) {
         &{ @content; }
     }
 }
@@ -27,21 +34,29 @@ $sq-mobile-first: true;
 
 body
 {
+    @include media-max(480px) {
+        
+    }
+}
+
+body
+{
     @include media-min(480px) {
-        margin: auto;
+        
     }
 }
 
 body
 {
     @include media-min(768px) {
-        margin: auto;
+        
+        
     }
 }
 
 body
-{
-    @include media-min(1024px) {
-        margin: auto;
+{  
+    @include media-min(1024px){
+           
     }
 }

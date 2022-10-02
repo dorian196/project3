@@ -5,9 +5,21 @@
     border: 1px solid transparent;
     background-color: rgb(251, 251, 251);
     height: 250px;
+    min-width: 100vw;
+    @include media-min(1024px){
+        min-width: 1025px;   
+        max-width: 1025px;
+        width: 1025px;
+    }
 }
 
 .txttop
 {
     text-align: center;
+    width: 100%;
+    @include media-min(1024px){
+        min-width: 1025px;   
+        max-width: 1025px;
+        width: 1025px;
+    }
 }

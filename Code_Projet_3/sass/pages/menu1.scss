@@ -4,11 +4,20 @@
 {
     display: flex;
     margin-top: 20px;
+    justify-content: center;
+    @include media-min(1024px){
+        min-width: 1000px;   
+        max-width: 1000px;
+        width: 1000px;
+    }
 }
 
 .arrow
 {
     font-size: 20px;
+    position: relative;
+    right: 15vw;
+    top: 5px;
 }
 
 .logomenu
@@ -20,9 +29,16 @@
 
 .banniere {
     & img {
+        object-fit: cover;
         margin-top: 20px;
-        width: 452px;
         height: 226px;
+        width: 90vw;   
+        min-width: 100%; 
+        @include media-min(1024px){
+            min-width: 1000px;   
+            max-width: 1000px;
+            width: 1000px;
+        }
     }
 }
 
@@ -40,6 +56,15 @@
     margin-left: 40px;
     position: relative;
     bottom: 40px;
+    width: 90vw;   
+    min-width: 100%;  
+    margin-left: 0;
+    @include media-min(1024px){
+        min-width: 1000px;   
+        max-width: 1000px;
+        width: 1000px;
+    }
+   
 
     & .fa-heart {
         font-size: 30px;
@@ -68,18 +93,25 @@
         background-color: rgb(255, 255, 255);
         box-shadow: 0 2px 5px 3px rgb(230, 230, 230);
         margin: 0 5px 20px -35px;
-        padding: 11px 0 11px 10px;
+        padding: 11px 0px 11px 10px;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        &:hover{
+        width: 85vw;   
+        min-width: 100%; 
+        @include media-min(1024px){
+            min-width: 970px;   
+            max-width: 970px;
+            width: 970px;
+        } 
+        &:focus{
         & > .anim_check {
             transform: scaleX(1);
             }    
         }
 
-        &:hover{
+        &:focus{
             & > p {
                 transform: scaleX(1);
                 }    
@@ -87,9 +119,11 @@
     }
 
     & p {
-        margin-right: 80px;
+        
+        position: relative;
+        right: 80px;
         transform: translateX(70px);
-        transition: transform 1s;
+        transition: transform 500ms;
         font-weight: bold;
     } 
 }
@@ -102,7 +136,7 @@
     background-color: $color_tertiaire;
     padding: 30px 20px 30px 20px;
     transform: scaleX(0);
-    transition: transform 1s;
+    transition: transform 500ms;
     transform-origin: right;
     position: absolute;
     right: 5px;

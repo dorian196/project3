@@ -3,31 +3,35 @@
 footer
 {
     background-color: rgb(60, 60, 60);
-    width: 452px;
+    width: 100vw;
+    min-width: 100%;
+    
+    
+    
 
     & a {
         color: white;    
     }
 
     & h3 {
-        margin-left: 30px;
+        padding-left: 30px;
         color: white;    
     }
 
     & li {
-        margin-left: -10px;
-        margin-bottom: 5px;    
+        padding-left: -10px;
+        padding-bottom: 5px;    
     }
 }
 
 .fa-handshake-angle
 {
     font-size: 11px;
-    margin-right: 8px;
+    padding-right: 8px;
 }
 
 .fa-utensils
 {
-    margin-right: 10px;
+    padding-right: 10px;
     font-size: 13px;
 }

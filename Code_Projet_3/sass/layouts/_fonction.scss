@@ -24,6 +24,15 @@
         margin-left: 10px;
         margin-right: 10px;
         font-size: 15px;  
+
+        &:hover {
+            background-color: #9256dc1a;
+        }
+
+        &:hover i {
+            color: #9256dc;
+        }
+
         @include media-min(1024px){
             min-width: 1000px;   
             max-width: 1000px;
@@ -45,6 +54,7 @@
     & i {
         margin-right: 20px;
         color: gray;   
+        
     }
 }
 

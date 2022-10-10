@@ -23,7 +23,7 @@ html {
   font-family: "Shrikhand", cursive, sans-serif;
   font-weight: 550;
 }
-* p, * h2, * h3, * .sectionmenu h2, * .sectionmenu li {
+* p, * h2, * h3, * .sectionmenu h2, * .sectionmenu li, * footer {
   font-family: "Roboto", sans-serif;
 }
 * .sectionmenu h2 {
@@ -185,34 +185,6 @@ input {
     width: 1000px;
   }
 }
-.container_menu .heart {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  bottom: 20px;
-}
-.container_menu input {
-  display: none;
-}
-.container_menu .fa-heart {
-  font-size: 30px;
-  color: rgb(230, 230, 230);
-  position: relative;
-  right: 10px;
-  cursor: pointer;
-}
-.container_menu .fa-heart::after {
-  content: "\f004";
-  position: relative;
-  right: 30px;
-}
-.container_menu .input:checked + label .fa-heart::after {
-  background: linear-gradient(to top right, #FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  transition: all 0.5s;
-}
 .container_menu .new {
   border: 1px solid transparent;
   border-radius: 3px;
@@ -296,6 +268,12 @@ footer li {
   display: flex;
   justify-content: center;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  cursor: pointer;
+}
+.btn_head:hover {
+  box-shadow: 0 2px 5px 5px rgb(150, 150, 150);
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  filter: brightness(1.2);
 }
 
 .btn_command {
@@ -310,10 +288,302 @@ footer li {
   padding: 10px 0 10px 0;
   margin-bottom: 20px;
   background: linear-gradient(#FF79DA, #9356DC);
+  cursor: pointer;
 }
 .btn_command a {
   color: white;
   font-size: 15px;
+}
+.btn_command:hover {
+  box-shadow: 0 2px 5px 5px rgb(150, 150, 150);
+  background: linear-gradient(#FF79DA, #9356DC);
+  filter: brightness(1.2);
+}
+
+.vignet1 {
+  opacity: 0;
+  animation-name: vignet;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.vignet2 {
+  opacity: 0;
+  animation-name: vignet;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.vignet3 {
+  opacity: 0;
+  animation-name: vignet;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes vignet {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Heart */
+.sectionmenu .solid_heart_menu {
+  font-size: 30px;
+  color: rgb(250, 250, 250);
+  cursor: pointer;
+  position: relative;
+  right: 10px;
+}
+.sectionmenu .regular_heart_menu {
+  font-size: 30px;
+  color: rgb(230, 230, 230);
+  position: relative;
+  right: 40px;
+  cursor: pointer;
+}
+.sectionmenu .input_menu:checked + label .solid_heart_menu {
+  background: linear-gradient(to top right, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.5s;
+}
+.sectionmenu .input_menu:checked + label .regular_heart_menu {
+  background: linear-gradient(to top right, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.5s;
+}
+.sectionmenu .input_menu {
+  display: none;
+}
+
+/* Check */
+.sectionmenu .price {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.sectionmenu .input {
+  display: none;
+}
+.sectionmenu .label {
+  display: inline-block;
+  width: 102%;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 5px 3px rgb(230, 230, 230);
+  margin: 0 5px 20px -35px;
+  padding: 11px 0px 11px 10px;
+  position: relative;
+}
+.sectionmenu .label::after {
+  content: "";
+  position: absolute;
+  right: -2px;
+  bottom: -1px;
+  width: 80px;
+  height: 84px;
+  border: 1px solid #99E2D0;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #99E2D0;
+  transition: all 0.3s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.sectionmenu .input:checked + .label::after {
+  transform: scaleX(1);
+  transform-origin: right;
+  transition: all 1s;
+}
+.sectionmenu .input:checked + .label .price {
+  transform: translate(-80px);
+  transition: all 1s;
+}
+.sectionmenu .input:checked + .label .fa-circle-check {
+  transform: scaleX(1);
+  transition: all 0.3s;
+  transition-delay: 0.3s;
+}
+.sectionmenu .fa-circle-check {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  margin-right: 15px;
+  z-index: 1;
+  transition-delay: 0.5s;
+  transform: scaleX(0);
+  transition: all 0.2s;
+}
+@media screen and (max-width: 1024px) {
+  .sectionmenu .fa-circle-check {
+    position: relative;
+    right: 10px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .sectionmenu .input:checked + .label .overflow_container {
+    width: 234px;
+  }
+  .sectionmenu .overflow {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.loading_spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  margin: auto;
+  position: relative;
+  opacity: 0;
+  animation-name: load2;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes load2 {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.loading_spinner:before {
+  content: "";
+  width: 48px;
+  height: 5px;
+  background: #000;
+  opacity: 0.25;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  border-radius: 50%;
+  animation: shadow 0.5s linear;
+  animation-duration: 1s;
+  animation-iteration-count: 15;
+  animation-fill-mode: backwards;
+}
+
+.loading_spinner:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(240, 164, 0);
+  animation: bxSpin 0.5s linear;
+  animation-iteration-count: 15;
+  animation-fill-mode: backwards;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+}
+
+@keyframes bxSpin {
+  17% {
+    border-bottom-right-radius: 3px;
+  }
+  25% {
+    transform: translateY(9px) rotate(22.5deg);
+  }
+  50% {
+    transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+    border-bottom-right-radius: 40px;
+  }
+  75% {
+    transform: translateY(9px) rotate(67.5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(90deg);
+  }
+}
+@keyframes shadow {
+  0%, 100% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1);
+  }
+}
+.loading {
+  opacity: 0;
+  animation-name: load;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container_menu .heart {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 20px;
+}
+.container_menu input {
+  display: none;
+}
+.container_menu .solid_heart {
+  font-size: 30px;
+  color: rgb(250, 250, 250);
+  cursor: pointer;
+  position: relative;
+  left: 50px;
+  transition: all 0.5s;
+}
+.container_menu .regular_heart {
+  font-size: 30px;
+  color: rgb(230, 230, 230);
+  position: relative;
+  right: 10px;
+  cursor: pointer;
+}
+.container_menu .solid_heart::after {
+  content: "\f004";
+  position: relative;
+  right: 30px;
+}
+.container_menu .input:checked + label .solid_heart::after {
+  background: linear-gradient(to top right, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.5s;
+}
+.container_menu .input:checked + label .regular_heart {
+  background: linear-gradient(to top right, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.5s;
 }
 
 /* pages */
@@ -375,6 +645,7 @@ footer li {
   width: 90vw;
   min-width: 100%;
   margin-left: 0;
+  /* Typographie */
 }
 @media screen and (min-width: 1024px) {
   .sectionmenu {
@@ -382,29 +653,6 @@ footer li {
     max-width: 1000px;
     width: 1000px;
   }
-}
-.sectionmenu .fa-heart {
-  font-size: 30px;
-  color: rgb(230, 230, 230);
-  position: relative;
-  right: 10px;
-  top: 10px;
-  cursor: pointer;
-}
-.sectionmenu .fa-heart::after {
-  content: "\f004";
-  position: relative;
-  right: 30px;
-}
-.sectionmenu .input_menu:checked + label .fa-heart::after {
-  background: linear-gradient(to top right, #FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  transition: all 0.5s;
-}
-.sectionmenu .input_menu {
-  display: none;
 }
 .sectionmenu h1, .sectionmenu h2 {
   margin-left: 15px;
@@ -435,67 +683,6 @@ footer li {
     max-width: 970px;
     width: 970px;
   }
-}
-.sectionmenu .price {
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
-  font-weight: bold;
-  transition: all 1s;
-}
-.sectionmenu .input {
-  display: none;
-}
-.sectionmenu .label {
-  display: inline-block;
-  width: 102%;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 20px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 2px 5px 3px rgb(230, 230, 230);
-  margin: 0 5px 20px -35px;
-  padding: 11px 0px 11px 10px;
-  position: relative;
-  transition: all 0.5s;
-}
-.sectionmenu .label::after {
-  content: "";
-  position: absolute;
-  right: -2px;
-  bottom: -1px;
-  width: 80px;
-  height: 84px;
-  border: 1px solid #99E2D0;
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 20px;
-  background-color: #99E2D0;
-  transition: all 1s;
-  transform: scaleX(0);
-  transform-origin: right;
-}
-.sectionmenu .input:checked + .label::after {
-  transform: scaleX(1);
-  transform-origin: right;
-  transition: all 1s;
-}
-.sectionmenu .input:checked + .label .price {
-  transform: translate(-80px);
-  transition: all 1s;
-}
-.sectionmenu .input:checked + .label .fa-circle-check {
-  transform: scaleX(1);
-  transition: all 0.3s;
-  transition-delay: 0.3s;
-}
-.sectionmenu .fa-circle-check {
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-  margin-right: 15px;
-  z-index: 1;
-  transition-delay: 0.5s;
-  transform: scaleX(0);
-  transition: all 0.3s;
 }
 
 /* themes */

@@ -12,5 +12,13 @@
     display: flex;
     justify-content: center;
     background: linear-gradient(to bottom right, $color_secondaire, $color_primaire);
+    cursor: pointer;
     
+
+
+    &:hover {
+    box-shadow: 0 2px 5px 5px rgb(150, 150, 150);
+    background: linear-gradient(to bottom right, $color_secondaire, $color_primaire);
+    filter: brightness(1.2);
+    }
 }

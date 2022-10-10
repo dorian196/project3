@@ -18,6 +18,11 @@
 /* components */
 @import "./components/btn_head";
 @import "./components/btn_command";
+@import "./components/anim_menu";
+@import "./components/menu_check_heart";
+@import "./components/menu_check.scss";
+@import "./components/loading_spinner";
+@import "./components/check_heart";
 
 /* pages */
 @import "./pages/menu1.scss";

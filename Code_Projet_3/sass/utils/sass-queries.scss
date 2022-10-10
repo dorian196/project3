@@ -7,6 +7,12 @@
     }
 }
 
+@mixin media-max($_1024px) {
+    @media screen and (max-width: $_1024px) {
+        &{ @content; }
+    }
+}
+
 @mixin media-min($_768px) {
     @media screen and (min-width: $_768px) {
         &{ @content; }
@@ -19,8 +25,8 @@
     }
 }
 
-@mixin media-max($_520px) {
-    @media screen and (max-width: $_520px) {
+@mixin media-max($_530px) {
+    @media screen and (max-width: $_530px) {
         &{ @content; }
     }
 }

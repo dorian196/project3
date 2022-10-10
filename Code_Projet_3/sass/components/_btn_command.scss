@@ -11,9 +11,16 @@
     padding: 10px 0 10px 0;
     margin-bottom: 20px;
     background: linear-gradient($color_secondaire, $color_primaire);
+    cursor: pointer;
 
     & a {
         color: white;
         font-size: 15px;    
+    }
+
+    &:hover {
+        box-shadow: 0 2px 5px 5px rgb(150, 150, 150);
+        background: linear-gradient($color_secondaire, $color_primaire);
+        filter: brightness(1.2);
     }
 }

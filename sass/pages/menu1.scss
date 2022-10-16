@@ -1,5 +1,18 @@
 /* Menu1 */
 
+main {
+    @include media-max(1024px){
+       width: 100vw; 
+    }    
+}
+
+html {
+    @include media-max(1024px){
+        margin-left: -10px;
+    }  
+}
+
+
 .headmenu
 {
     display: flex;
@@ -102,5 +115,17 @@
         } 
         
     }
+}
+
+main {
+    @include media-max(1024px){
+       width: 100vw; 
+    }    
+}
+
+html {
+    @include media-max(1024px){
+        margin-left: -10px;
+    }  
 }
 

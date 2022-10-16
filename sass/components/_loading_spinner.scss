@@ -1,21 +1,16 @@
 
 
 .fa-utensils {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    font-size: 200px;
+    font-size: 20vw;
     background: linear-gradient(to top right, $color_secondaire, $color_primaire);
     background-clip:text;
     -webkit-background-clip:text;
-    color:transparent;
-    margin: auto;
+    color: transparent;
     position: absolute;
-    top: 20vw; left: 45vw; right: 45vw;
-    opacity: 0;
+    top: 30%; left: 40vw; right: 40vw;
     animation-name: load2;
     animation-duration: 3s;
-    animation-fill-mode: backwards;
+    animation-fill-mode: forwards;
     overflow: hidden;
 }    
 @keyframes load2 {
@@ -28,8 +23,9 @@
     95% {
         opacity: 1;
     }
+    99% {transform: scale(1);}
     100% {
-        opacity: 0;
+        opacity: 0; transform: scale(0);
     }
 }
 
@@ -42,9 +38,10 @@
   animation-duration: 3s;
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
   @keyframes remplissage {
     0% {transform: translateY(0px);}
-    100% {transform: translateY(200px);}
+    100% {transform: translateY(25vw);}
   }
 }
   

@@ -31,6 +31,12 @@
     }
 }
 
+@mixin media-min($_530px) {
+    @media screen and (min-width: $_530px) {
+        &{ @content; }
+    }
+}
+
 // What is the media type?
 $sq-media: "all";
 // Enable (or not) a small tag displaying your current breakpoint

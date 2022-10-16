@@ -23,7 +23,7 @@ html {
   font-family: "Shrikhand", cursive, sans-serif;
   font-weight: 550;
 }
-* p, * h2, * h3, * .sectionmenu h2, * .sectionmenu li, * footer {
+* p, * h2, * h3, * .sectionmenu h2, * .sectionmenu li, * footer, * span {
   font-family: "Roboto", sans-serif;
 }
 * .sectionmenu h2 {
@@ -247,7 +247,7 @@ footer h3 {
   color: white;
 }
 footer li {
-  padding-left: -10px;
+  padding-left: 0px;
   padding-bottom: 5px;
 }
 
@@ -256,7 +256,7 @@ footer li {
   padding-right: 8px;
 }
 
-.fa-utensils {
+.utensils_footer {
   padding-right: 10px;
   font-size: 13px;
 }
@@ -352,9 +352,11 @@ footer li {
 @keyframes vignet {
   0% {
     opacity: 0;
+    transform: translateY(10px);
   }
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 /* Heart */
@@ -391,25 +393,36 @@ footer li {
 }
 
 /* Check */
+.sectionmenu .position {
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+}
 .sectionmenu .price {
   position: absolute;
-  right: 15px;
+  left: 900px;
   bottom: 15px;
   font-weight: bold;
   transition: all 0.3s;
+}
+@media screen and (max-width: 1024px) {
+  .sectionmenu .price {
+    left: 85vw;
+  }
 }
 .sectionmenu .input {
   display: none;
 }
 .sectionmenu .label {
   display: inline-block;
-  width: 102%;
+  width: 95%;
+  height: 62px;
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 20px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 2px 5px 3px rgb(230, 230, 230);
-  margin: 0 5px 20px -35px;
+  margin: 0 5px 20px 10px;
   padding: 11px 0px 11px 10px;
   position: relative;
 }
@@ -434,7 +447,8 @@ footer li {
   transition: all 1s;
 }
 .sectionmenu .input:checked + .label .price {
-  transform: translate(-80px);
+  position: absolute;
+  transform: translateX(-80px);
   transition: all 1s;
 }
 .sectionmenu .input:checked + .label .fa-circle-check {
@@ -443,6 +457,9 @@ footer li {
   transition-delay: 0.3s;
 }
 .sectionmenu .fa-circle-check {
+  position: absolute;
+  left: 90vw;
+  bottom: 25px;
   color: rgb(255, 255, 255);
   font-size: 30px;
   margin-right: 15px;
@@ -451,41 +468,32 @@ footer li {
   transform: scaleX(0);
   transition: all 0.2s;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 530px) {
   .sectionmenu .fa-circle-check {
-    position: relative;
-    right: 10px;
+    position: absolute;
+    left: 85vw;
   }
 }
-@media screen and (max-width: 530px) {
-  .sectionmenu .input:checked + .label .overflow_container {
-    width: 234px;
-  }
-  .sectionmenu .overflow {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+@media screen and (min-width: 1024px) {
+  .sectionmenu .fa-circle-check {
+    position: absolute;
+    left: 910px;
   }
 }
 
 .fa-utensils {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  font-size: 200px;
+  font-size: 20vw;
   background: linear-gradient(to top right, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  margin: auto;
   position: absolute;
-  top: 20vw;
-  left: 45vw;
-  right: 45vw;
-  opacity: 0;
+  top: 30%;
+  left: 40vw;
+  right: 40vw;
   animation-name: load2;
   animation-duration: 3s;
-  animation-fill-mode: backwards;
+  animation-fill-mode: forwards;
   overflow: hidden;
 }
 
@@ -499,8 +507,12 @@ footer li {
   95% {
     opacity: 1;
   }
+  99% {
+    transform: scale(1);
+  }
   100% {
     opacity: 0;
+    transform: scale(0);
   }
 }
 .fa-utensils::after {
@@ -512,13 +524,14 @@ footer li {
   animation-duration: 3s;
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
 }
 @keyframes remplissage {
   0% {
     transform: translateY(0px);
   }
   100% {
-    transform: translateY(200px);
+    transform: translateY(25vw);
   }
 }
 

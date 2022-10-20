@@ -6,12 +6,18 @@
         font-weight: 550;
     }
 
-    & p, & h2, & h3, & .sectionmenu h2, & .sectionmenu li, & footer, & span {
+    & p, & h2, & h3, & .sectionmenu h2, & .sectionmenu li, & footer, & span & .new{
         font-family: 'Roboto', sans-serif    
     }
 
     & .sectionmenu h2{
-        text-transform: uppercase;    
+        text-transform: uppercase; 
+        font-weight: lighter;   
+        color: gray;
+    }
+
+    & .name_menu {
+        font-size: 50px;
     }
 }
 

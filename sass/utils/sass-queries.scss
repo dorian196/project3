@@ -7,11 +7,6 @@
     }
 }
 
-@mixin media-max($_1024px) {
-    @media screen and (max-width: $_1024px) {
-        &{ @content; }
-    }
-}
 
 @mixin media-min($_768px) {
     @media screen and (min-width: $_768px) {
@@ -25,11 +20,6 @@
     }
 }
 
-@mixin media-max($_530px) {
-    @media screen and (max-width: $_530px) {
-        &{ @content; }
-    }
-}
 
 @mixin media-min($_530px) {
     @media screen and (min-width: $_530px) {
@@ -44,31 +34,3 @@ $sq-debug: false;
 // Use mobile first or not
 $sq-mobile-first: true;
 
-body
-{
-    @include media-max(480px) {
-        
-    }
-}
-
-body
-{
-    @include media-min(480px) {
-        
-    }
-}
-
-body
-{
-    @include media-min(768px) {
-        
-        
-    }
-}
-
-body
-{  
-    @include media-min(1024px){
-           
-    }
-}

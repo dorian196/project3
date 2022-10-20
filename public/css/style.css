@@ -2,13 +2,21 @@
 html {
   /* Set border-box as the global default */
   box-sizing: border-box;
+  width: 100vw;
+  max-width: 100%;
+  min-width: 100%;
+  margin: auto;
 }
 
+* {
+  box-sizing: border-box;
+}
 * body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
 }
 * a {
   text-decoration: none;
@@ -23,11 +31,16 @@ html {
   font-family: "Shrikhand", cursive, sans-serif;
   font-weight: 550;
 }
-* p, * h2, * h3, * .sectionmenu h2, * .sectionmenu li, * footer, * span {
+* p, * h2, * h3, * .sectionmenu h2, * .sectionmenu li, * footer, * span * .new {
   font-family: "Roboto", sans-serif;
 }
 * .sectionmenu h2 {
   text-transform: uppercase;
+  font-weight: lighter;
+  color: gray;
+}
+* .name_menu {
+  font-size: 50px;
 }
 
 /* utils */
@@ -40,7 +53,6 @@ header {
   align-items: center;
   height: 40px;
   width: 100vw;
-  min-width: 100%;
 }
 @media screen and (min-width: 1024px) {
   header {
@@ -52,84 +64,77 @@ header {
 header img {
   width: 200px;
 }
-@media screen and (min-width: 1024px) {
-  header img {
-    margin-left: -30px;
-  }
-}
 
 /* div */
 .top {
-  border: 1px solid transparent;
-  background-color: rgb(251, 251, 251);
+  border: 0px solid transparent;
+  background-color: rgb(240, 240, 240);
   height: 250px;
-  min-width: 100vw;
-}
-@media screen and (min-width: 1024px) {
-  .top {
-    min-width: 1025px;
-    max-width: 1025px;
-    width: 1025px;
-  }
+  width: 100vw;
 }
 
 .txttop {
   text-align: center;
-  width: 100%;
+  width: 90vw;
+  margin: auto;
 }
-@media screen and (min-width: 1024px) {
-  .txttop {
-    min-width: 1025px;
-    max-width: 1025px;
-    width: 1025px;
-  }
+.txttop h2 {
+  font-weight: bolder;
+  margin-top: -20px;
+  padding: 20px;
+}
+.txttop p {
+  font-size: 20px;
+  color: rgb(92, 92, 92);
 }
 
 /* form */
 form {
   text-align: center;
-  border: 1px solid transparent;
-  height: 30px;
-  width: 100%;
-  background-color: rgb(240, 240, 240);
+  border: 0px solid transparent;
+  height: 70px;
+  padding-bottom: 20px;
+  width: 100vw;
+  background-color: rgb(230, 230, 230);
   box-shadow: 0 -4px 3px -2px rgb(194, 194, 194);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 1024px) {
-  form {
-    min-width: 1025px;
-    max-width: 1025px;
-    width: 1025px;
-  }
-}
 
 input {
   border: none;
   width: 100px;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(230, 230, 230);
+}
+
+.fa-location-dot {
+  padding-right: 15px;
 }
 
 /* fonction */
+.fonction {
+  width: 100vw;
+  margin: auto;
+}
 .fonction ul {
-  padding: 0 20px 0 20px;
+  padding: 0;
   align-items: center;
+  width: 90vw;
+  margin: auto;
 }
 .fonction li {
-  border: 1px solid transparent;
+  border: 0px solid transparent;
   border-radius: 35px;
   background-color: rgb(250, 250, 250);
   box-shadow: 0 2px 5px 3px rgb(240, 240, 240);
   height: 100px;
   width: 90vw;
-  min-width: 100%;
+  margin: auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-top: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
   font-size: 15px;
 }
 .fonction li:hover {
@@ -146,41 +151,53 @@ input {
   }
 }
 .fonction span {
-  font-size: 20px;
-  border: 1px solid transparent;
+  font-size: 15px;
+  border: 0px solid transparent;
   border-radius: 50%;
-  padding: 2px 8px 2px 8px;
+  padding: 5px 10px 5px 10px;
   color: white;
   background-color: #9356DC;
   margin-right: 25px;
-  margin-left: -15px;
 }
 .fonction i {
   margin-right: 20px;
   color: gray;
 }
-
-.titre_fonction {
-  margin-left: 50px;
+.fonction h2 {
+  font-size: 18px;
 }
-
-/* Section */
-@media screen and (max-width: 1024px) {
-  body {
-    width: 100vw;
+.fonction h3 {
+  font-size: 25px;
+  width: 90vw;
+  margin: auto;
+  padding-top: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .fonction h3 {
+    min-width: 1000px;
+    max-width: 1000px;
+    width: 1000px;
   }
 }
 
+/* Section */
+.loading {
+  border: 0px solid transparent;
+  background: rgb(240, 240, 240);
+  width: 100vw;
+}
+
 .container_menu ul {
-  padding: 0 20px 0 20px;
   align-items: center;
+  padding: 0 0 25px 0;
+  margin-bottom: 0px;
 }
 .container_menu img {
   width: 90vw;
-  min-width: 100%;
+  margin: auto;
   height: 226px;
   object-fit: cover;
-  border: 1px solid transparent;
+  border: 0px solid transparent;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -192,7 +209,7 @@ input {
   }
 }
 .container_menu .new {
-  border: 1px solid transparent;
+  border: 0px solid transparent;
   border-radius: 3px;
   box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.3490196078);
   color: rgba(33, 163, 131, 0.9843137255);
@@ -206,15 +223,15 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Roboto", sans-serif;
 }
 .container_menu li {
-  border: 1px solid transparent;
+  border: 0px solid transparent;
   border-radius: 20px;
   background-color: rgb(250, 250, 250);
-  box-shadow: 0 2px 5px 3px rgb(240, 240, 240);
-  margin-top: 50px;
+  box-shadow: 0 2px 5px 3px rgb(230, 230, 230);
+  margin: auto auto 20px auto;
   width: 90vw;
-  min-width: 100%;
   position: relative;
 }
 @media screen and (min-width: 1024px) {
@@ -225,25 +242,39 @@ input {
   }
 }
 
-section h2 {
-  margin-left: 50px;
-}
 section h3, section p {
   margin-bottom: -10px;
   margin-left: 10px;
+}
+section h2 {
+  font-size: 25px;
+  width: 90vw;
+  margin: auto;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  margin-top: 80px;
+}
+@media screen and (min-width: 1024px) {
+  section h2 {
+    min-width: 1000px;
+    max-width: 1000px;
+    width: 1000px;
+  }
 }
 
 /* footer */
 footer {
   background-color: rgb(60, 60, 60);
   width: 100vw;
-  min-width: 100%;
+}
+footer ul {
+  padding-left: 20px;
 }
 footer a {
   color: white;
 }
 footer h3 {
-  padding-left: 30px;
+  padding-left: 20px;
   color: white;
 }
 footer li {
@@ -264,12 +295,12 @@ footer li {
 /* components */
 /* btn_head */
 .btn_head {
-  border: solid 1px transparent;
+  border: solid 0px transparent;
   border-radius: 50px;
   box-shadow: 0 2px 5px 3px rgb(220, 220, 220);
   background-color: #9356DC;
   color: white;
-  width: 250px;
+  width: 220px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -287,7 +318,7 @@ footer li {
   justify-content: center;
   width: 150px;
   margin: auto;
-  border: 1px solid transparent;
+  border: 0px solid transparent;
   border-radius: 50px;
   box-shadow: 0 2px 5px 3px rgb(220, 220, 220);
   background-color: #FF79DA;
@@ -299,6 +330,7 @@ footer li {
 .btn_command a {
   color: white;
   font-size: 15px;
+  font-family: "Roboto", sans-serif;
 }
 .btn_command:hover {
   box-shadow: 0 2px 5px 5px rgb(150, 150, 150);
@@ -360,33 +392,40 @@ footer li {
   }
 }
 /* Heart */
+.sectionmenu input {
+  display: none;
+}
+.sectionmenu .regular_heart_menu {
+  font-size: 35px;
+  color: rgb(100, 100, 100);
+  position: relative;
+  top: 35px;
+  right: 50px;
+  cursor: pointer;
+}
 .sectionmenu .solid_heart_menu {
-  font-size: 30px;
+  font-size: 35px;
   color: rgb(250, 250, 250);
   cursor: pointer;
   position: relative;
-  right: 10px;
-}
-.sectionmenu .regular_heart_menu {
-  font-size: 30px;
-  color: rgb(230, 230, 230);
-  position: relative;
-  right: 40px;
-  cursor: pointer;
+  top: 35px;
+  right: 15px;
 }
 .sectionmenu .input_menu:checked + label .solid_heart_menu {
   background: linear-gradient(to top right, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  transition: all 0.5s;
+  animation-name: heart;
+  animation-duration: 2s;
 }
-.sectionmenu .input_menu:checked + label .regular_heart_menu {
-  background: linear-gradient(to top right, #FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  transition: all 0.5s;
+@keyframes heart {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 30px;
+  }
 }
 .sectionmenu .input_menu {
   display: none;
@@ -400,15 +439,21 @@ footer li {
 }
 .sectionmenu .price {
   position: absolute;
-  left: 900px;
+  right: 20px;
   bottom: 15px;
   font-weight: bold;
-  transition: all 0.3s;
+  transition: all 1s;
 }
-@media screen and (max-width: 1024px) {
-  .sectionmenu .price {
-    left: 85vw;
-  }
+.sectionmenu .fa-circle-check {
+  position: absolute;
+  right: -45px;
+  bottom: 25px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  margin-right: 15px;
+  z-index: 1;
+  transition: all 1s;
+  transform: scaleX(0);
 }
 .sectionmenu .input {
   display: none;
@@ -416,15 +461,16 @@ footer li {
 .sectionmenu .label {
   display: inline-block;
   width: 95%;
-  height: 62px;
+  height: 84px;
   cursor: pointer;
-  border: 1px solid transparent;
+  border: 0px solid transparent;
   border-radius: 20px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 2px 5px 3px rgb(230, 230, 230);
   margin: 0 5px 20px 10px;
   padding: 11px 0px 11px 10px;
   position: relative;
+  overflow: hidden;
 }
 .sectionmenu .label::after {
   content: "";
@@ -437,7 +483,7 @@ footer li {
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
   background-color: #99E2D0;
-  transition: all 0.3s;
+  transition: all 1s;
   transform: scaleX(0);
   transform-origin: right;
 }
@@ -452,36 +498,20 @@ footer li {
   transition: all 1s;
 }
 .sectionmenu .input:checked + .label .fa-circle-check {
-  transform: scaleX(1);
-  transition: all 0.3s;
-  transition-delay: 0.3s;
+  transform: scaleX(1) translateX(-55px) rotate(720deg);
+  transition: all 1s;
+  transition-delay: 0.1s;
 }
-.sectionmenu .fa-circle-check {
-  position: absolute;
-  left: 90vw;
-  bottom: 25px;
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-  margin-right: 15px;
-  z-index: 1;
-  transition-delay: 0.5s;
-  transform: scaleX(0);
-  transition: all 0.2s;
+.sectionmenu .input:checked + .label .container_overflow {
+  width: 44vw;
 }
-@media screen and (max-width: 530px) {
-  .sectionmenu .fa-circle-check {
-    position: absolute;
-    left: 85vw;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .sectionmenu .fa-circle-check {
-    position: absolute;
-    left: 910px;
-  }
+.sectionmenu .input:checked + .label .container_overflow .overflow1, .sectionmenu .input:checked + .label .container_overflow .overflow2 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.fa-utensils {
+.utensils_loading {
   font-size: 20vw;
   background: linear-gradient(to top right, #FF79DA, #9356DC);
   background-clip: text;
@@ -515,7 +545,7 @@ footer li {
     transform: scale(0);
   }
 }
-.fa-utensils::after {
+.utensils_loading::after {
   content: "";
   position: absolute;
   background: rgb(255, 255, 255);
@@ -535,7 +565,7 @@ footer li {
   }
 }
 
-.loading, header, footer, .main_fonction {
+.loading, .header_acceuil, .footer_acceuil, .main_fonction {
   opacity: 0;
   animation-name: load;
   animation-duration: 1s;
@@ -556,59 +586,46 @@ footer li {
   justify-content: flex-end;
   position: relative;
   bottom: 20px;
+  right: 30px;
 }
 .container_menu input {
   display: none;
+}
+.container_menu .regular_heart {
+  font-size: 30px;
+  color: rgb(100, 100, 100);
+  position: relative;
+  right: 10px;
+  bottom: 20px;
+  cursor: pointer;
 }
 .container_menu .solid_heart {
   font-size: 30px;
   color: rgb(250, 250, 250);
   cursor: pointer;
   position: relative;
-  left: 50px;
-  transition: all 0.5s;
+  bottom: 20px;
+  right: -20px;
 }
-.container_menu .regular_heart {
-  font-size: 30px;
-  color: rgb(230, 230, 230);
-  position: relative;
-  right: 10px;
-  cursor: pointer;
-}
-.container_menu .solid_heart::after {
-  content: "\f004";
-  position: relative;
-  right: 30px;
-}
-.container_menu .input:checked + label .solid_heart::after {
+.container_menu .input:checked + label .solid_heart {
   background: linear-gradient(to top right, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  transition: all 0.5s;
+  animation-name: heart;
+  animation-duration: 2s;
 }
-.container_menu .input:checked + label .regular_heart {
-  background: linear-gradient(to top right, #FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  transition: all 0.5s;
+@keyframes heart {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 30px;
+  }
 }
 
 /* pages */
 /* Menu1 */
-@media screen and (max-width: 1024px) {
-  main {
-    width: 100vw;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  html {
-    margin-left: -10px;
-  }
-}
-
 .headmenu {
   display: flex;
   margin-top: 20px;
@@ -638,7 +655,7 @@ footer li {
 .banniere img {
   object-fit: cover;
   margin-top: 20px;
-  height: 226px;
+  height: 350px;
   width: 90vw;
   min-width: 100%;
 }
@@ -658,14 +675,14 @@ footer li {
 
 .sectionmenu {
   border: 1px solid transparent;
-  border-radius: 40px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
   background-color: rgb(245, 245, 245);
-  margin-left: 40px;
   position: relative;
   bottom: 40px;
   width: 90vw;
-  min-width: 100%;
-  margin-left: 0;
+  min-width: 100vw;
+  margin: 0 0 -40px 0;
   /* Typographie */
 }
 @media screen and (min-width: 1024px) {
@@ -675,14 +692,23 @@ footer li {
     width: 1000px;
   }
 }
-.sectionmenu h1, .sectionmenu h2 {
-  margin-left: 15px;
+.sectionmenu h1 {
+  font-size: 35px;
+  padding-left: 3vw;
 }
 .sectionmenu h2 {
   font-size: 20px;
-  margin-top: 50px;
+  margin: 50px 0 0 4.5vw;
   border-bottom: 3px solid #99E2D0;
   width: 50px;
+}
+@media screen and (min-width: 1024px) {
+  .sectionmenu h2 {
+    min-width: 50px;
+    max-width: 50px;
+    width: 50px;
+    margin-left: 4vw;
+  }
 }
 .sectionmenu h3 {
   margin: 10px 0 10px 0;
@@ -690,32 +716,38 @@ footer li {
 .sectionmenu p {
   margin: 0;
 }
+.sectionmenu ul {
+  padding: 0 12px 0 3vw;
+}
 .sectionmenu li {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 85vw;
+  width: 95vw;
   min-width: 100%;
+  margin: auto;
 }
 @media screen and (min-width: 1024px) {
   .sectionmenu li {
     min-width: 970px;
     max-width: 970px;
     width: 970px;
+    padding-right: 3vw;
   }
 }
-
-@media screen and (max-width: 1024px) {
-  main {
-    width: 100vw;
-  }
+.sectionmenu .container_overflow {
+  display: flex;
+  flex-direction: column;
 }
-
-@media screen and (max-width: 1024px) {
-  html {
-    margin-left: -10px;
-  }
+.sectionmenu .overflow1 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 8px;
+}
+.sectionmenu .overflow2 {
+  margin-top: 5px;
+  font-size: 17px;
 }
 
 /* themes */

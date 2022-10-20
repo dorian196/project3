@@ -1,37 +1,44 @@
 
 /* Heart */
 .sectionmenu {
-& .solid_heart_menu {
-    font-size: 30px;
-    color: rgb(250, 250, 250);
-    cursor: pointer;
-    position: relative;
-    right: 10px; 
-}
+    
 
-& .regular_heart_menu {
-    font-size: 30px;
-    color: rgb(230, 230, 230);
-    position: relative;
-    right: 40px; 
-    cursor: pointer;
-}
+    & input {
+        display: none;
+    }  
 
-& .input_menu:checked + label .solid_heart_menu{
-    background: linear-gradient(to top right, $color_secondaire, $color_primaire);
-    background-clip:text;
-    -webkit-background-clip:text;
-    color:transparent;
-    transition: all 0.5s;
-}
+    & .regular_heart_menu {
+        font-size: 35px;
+        color: rgb(100, 100, 100);
+        position: relative;
+        top: 35px;right: 50px; 
+        cursor: pointer;
+        }
 
-& .input_menu:checked + label .regular_heart_menu {
-    background: linear-gradient(to top right, $color_secondaire, $color_primaire);
-    background-clip:text;
-    -webkit-background-clip:text;
-    color:transparent;
-    transition: all 0.5s;
-}
+
+    & .solid_heart_menu {
+        font-size: 35px;
+        color: rgb(250, 250, 250);
+        cursor: pointer;
+        position: relative;
+        top: 35px; right: 15px;
+        
+    
+    }
+
+    & .input_menu:checked + label  .solid_heart_menu {
+        background: linear-gradient(to top right, $color_secondaire, $color_primaire);
+        background-clip:text;
+        -webkit-background-clip:text;
+        color:transparent;
+        animation-name: heart;
+        animation-duration: 2s;
+        @keyframes heart {
+            0% {height: 0px;}
+            100% {height: 30px;}
+        }
+    }
+
 
 & .input_menu {
     display: none;

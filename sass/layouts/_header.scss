@@ -7,7 +7,6 @@ header
     align-items: center;
     height: 40px;
     width: 100vw;
-    min-width: 100%;
     @include media-min(1024px){
         min-width: 1025px;   
         max-width: 1025px;
@@ -16,9 +15,6 @@ header
     
     & img {
         width: 200px;
-        @include media-min(1024px){
-            margin-left: -30px;
-        }
-         
+        
     }
 }

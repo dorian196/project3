@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=480, initial-scale=1">
     <link rel="stylesheet" href="./public/css/style.css">
-    <link rel="stylesheet" href="./public/css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,105 +29,83 @@
         <section>
             <div class="sectionmenu">
                 <div class="titremenu">
-                    <h1>La note enchantée</h1>
+                    <h1 class="name_menu">La note enchantée</h1>
                     <div class="heart1">
                         <input type="checkbox" id="heartmenu2" class="input_menu">
                         <label for="heartmenu2" class="label_menu"><i class="fa-solid fa-heart solid_heart_menu"></i><i class="fa-regular fa-heart regular_heart_menu"></i></label>
                     </div>
                 </div>
                 <h2>Entrées</h2>
-                <div class="vignet1 vignet">
-                    <div class="position">
-                        <div class="overflow_container"><h3 class="overflow">Ravioles de foie gras</h3><p class="overflow">Accompagnés de leur crème à la truffe</p></div>
-                    </div>
-                    <input type="checkbox" id="check9" class="input">
-                    <label for="check9" class="label">
-                        <span class="price">25€</span><i class="fa-sharp fa-solid fa-circle-check"></i>
-                    </label>
-                </div>
-                <div class="vignet2 vignet">
-                    <div class="position">
-                        <div class="overflow_container"><h3 class="overflow">Caviar osciètre</h3><p class="overflow">Sur blini à la farine de blé noir</p></div>
-                    </div>
-                    <input type="checkbox" id="check10" class="input">
-                    <label for="check10" class="label">
-                        <span class="price">35€</span><i class="fa-sharp fa-solid fa-circle-check"></i>
-                    </label>
-                </div>
-                <div class="vignet3 vignet">
-                    <div class="position">
-                        <div class="overflow_container"><h3 class="overflow">Homard et espuma de langoustines</h3><p class="overflow">Mariné aux zest d'orange</p></div>
-                    </div>
-                    <input type="checkbox" id="check11" class="input">
-                    <label for="check11" class="label">
-                        <span class="price">20€</span><i class="fa-sharp fa-solid fa-circle-check"></i>
-                    </label>
-                </div>
-                <div class="vignet4 vignet">
-                    <div class="position">
-                        <div class="overflow_container"><h3 class="overflow">Foie frais de canard cuit entier</h3><p class="overflow">Confiture de canard cuit entier</p></div>
-                    </div>
-                    <input type="checkbox" id="check12" class="input">
-                    <label for="check12" class="label">
-                        <span class="price">35€</span><i class="fa-sharp fa-solid fa-circle-check"></i>
-                    </label>
-                </div>
+                <ul>
+                    <li class="vignet vignet1">
+                        <input type="checkbox" id="check1" class="input">
+                        <label for="check1" class="label">
+                            <span class="container_overflow"><span class="overflow1">Ravioles de foie gras</span><span class="overflow2">Accompagnés de leur crème à la truffe</span></span><span class="price">25€</span><i class="fa-sharp fa-solid fa-circle-check"></i>
+                        </label>
+                    </li>
+                    <li class="vignet vignet2">
+                        <input type="checkbox" id="check2" class="input">
+                        <label for="check2" class="label">
+                            <span class="container_overflow"><span class="overflow1">Caviar osciètre</span><span class="overflow2">Sur blini à la farine de blé noir</span></span><span class="price">35€</span><i class="fa-sharp fa-solid fa-circle-check"></i>
+                        </label>
+                    </li>
+                    <li class="vignet vignet3">
+                        <input type="checkbox" id="check3" class="input">
+                        <label for="check3" class="label">
+                            <span class="container_overflow"><span class="overflow1">Homard et espuma de langoustines</span><span class="overflow2">Mariné aux zest d'orange</span></span><span class="price">20€</span><i class="fa-sharp fa-solid fa-circle-check"></i>
+                        </label>
+                    </li>
+                    <li class="vignet vignet4">
+                        <input type="checkbox" id="check4" class="input">
+                        <label for="check4" class="label">
+                            <span class="container_overflow"><span class="overflow1">Foie frais de canard cuit entier</span><span class="overflow2">Confiture de canard cuit entier</span></span><span class="price">35€</span><i class="fa-sharp fa-solid fa-circle-check"></i>
+                        </label>
+                    </li>
+                </ul>
+                
                 <h2>Plats</h2>
-                <div class="vignet5 vignet">
-                    <div class="position">
-                        <div class="overflow_container"><h3 class="overflow">Nois de coquilles Saint-Jacques</h3><p class="overflow">Sur lit de purée de céleri-rave</p></div>
-                    </div>
-                    <input type="checkbox" id="check13" class="input">
-                    <label for="check13" class="label">
-                        <span class="price">40€</span><i class="fa-sharp fa-solid fa-circle-check"></i>
-                    </label>
-                </div>
-                <div class="vignet6 vignet">
-                    <div class="position">
-                        <div class="overflow_container"><h3 class="overflow">Langoustine poelée</h3><p class="overflow">Purée de patate douce</p></div>
-                    </div>
-                    <input type="checkbox" id="check14" class="input">
-                    <label for="check14" class="label">
-                        <span class="price">35€</span><i class="fa-sharp fa-solid fa-circle-check"></i>
-                    </label>
-                </div>
-                <div class="vignet7 vignet">
-                    <div class="position">
-                        <div class="overflow_container"><h3 class="overflow">Mijoté de queue de boeuf</h3><p class="overflow">Et riz sauvage aux zest de citron</p></div>
-                    </div>
-                    <input type="checkbox" id="check15" class="input">
-                    <label for="check15" class="label">
-                        <span class="price">44€</span><i class="fa-sharp fa-solid fa-circle-check"></i>
-                    </label>
-                </div>
+                <ul>
+                    <li class="vignet vignet5">
+                        <input type="checkbox" id="check5" class="input">
+                        <label for="check5" class="label">
+                            <span class="container_overflow"><span class="overflow1">Noix de coquilles Saint-Jacques</span><span class="overflow2">Sur lit de purée de céleri-rave</span></span><span class="price">40€</span><i class="fa-sharp fa-solid fa-circle-check"></i>
+                        </label>
+                    </li>
+                    <li class="vignet vignet6">
+                        <input type="checkbox" id="check6" class="input">
+                        <label for="check6" class="label">
+                            <span class="container_overflow"><span class="overflow1">Langoustine poelée</span><span class="overflow2">Purée de patate douce</span></span><span class="price">35€</span><i class="fa-sharp fa-solid fa-circle-check"></i>
+                        </label>
+                    </li>
+                    <li class="vignet vignet7">
+                        <input type="checkbox" id="check7" class="input">
+                        <label for="check7" class="label">
+                            <span class="container_overflow"><span class="overflow1">Mijoté de queue de boeuf</span><span class="overflow2">Et riz sauvage aux zest de citron</span></span><span class="price">44€</span><i class="fa-sharp fa-solid fa-circle-check"></i>
+                        </label>
+                    </li>
+                </ul>
+
                 <h2>Desserts</h2>
-                <div class="vignet8 vignet">
-                    <div class="position">
-                        <div class="overflow_container"><h3 class="overflow">Macaron noisette et chocolat</h3><p class="overflow">Glace au caramel brun et sel de Guérande</p></div>
-                    </div>
-                    <input type="checkbox" id="check16" class="input">
-                    <label for="check16" class="label">
-                        <span class="price">18€</span><i class="fa-sharp fa-solid fa-circle-check"></i>
-                    </label>
-                </div>
-                <div class="vignet9 vignet">
-                    <div class="position">
-                        <div class="overflow_container"><h3 class="overflow">Baba au rhum revisité</h3><p class="overflow">Avec son coulis de citron</p></div>
-                    </div>
-                    <input type="checkbox" id="check17" class="input">
-                    <label for="check17" class="label">
-                        <span class="price">22€</span><i class="fa-sharp fa-solid fa-circle-check"></i>
-                    </label>
-                </div>
-                <div class="vignet10 vignet">
-                    <div class="position">
-                        <div class="overflow_container"><h3 class="overflow">Tarte au citron meringuée</h3><p class="overflow">Destructurée</p></div>
-                    </div>
-                    <input type="checkbox" id="check18" class="input">
-                    <label for="check18" class="label">
-                        <span class="price">23€</span><i class="fa-sharp fa-solid fa-circle-check"></i>
-                    </label>
-                </div>
+                <ul>
+                    <li class="vignet vignet8">
+                        <input type="checkbox" id="check8" class="input">
+                        <label for="check8" class="label">
+                            <span class="container_overflow"><span class="overflow1">Macaron noisette et chocolat</span><span class="overflow2">Glace au caramel brun et sel de Guérande</span></span><span class="price">18€</span><i class="fa-sharp fa-solid fa-circle-check"></i>
+                        </label>
+                    </li>
+                    <li class="vignet vignet9">
+                        <input type="checkbox" id="check9" class="input">
+                        <label for="check9" class="label">
+                            <span class="container_overflow"><span class="overflow1">Baba au rhum revisité</span><span class="overflow2">Avec son coulis de citron</span></span><span class="price">22€</span><i class="fa-sharp fa-solid fa-circle-check"></i>
+                        </label>
+                    </li>
+                    <li class="vignet vignet10">
+                        <input type="checkbox" id="check10" class="input">
+                        <label for="check10" class="label">
+                            <span class="container_overflow"><span class="overflow1">Tarte au citron meringuée</span><span class="overflow2">Destructurée</span></span><span class="price">23€</span><i class="fa-sharp fa-solid fa-circle-check"></i>
+                        </label>
+                    </li>
+                </ul>
                 <div class="btn_command">
                     <a href="#">Commander</a>
                 </div>

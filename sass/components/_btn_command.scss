@@ -4,7 +4,7 @@
     justify-content: center;
     width: 150px;
     margin: auto;
-    border: 1px solid transparent;
+    border: 0px solid transparent;
     border-radius: 50px;
     box-shadow: 0 2px 5px 3px rgb(220, 220, 220);
     background-color: $color_secondaire;
@@ -15,7 +15,8 @@
 
     & a {
         color: white;
-        font-size: 15px;    
+        font-size: 15px;  
+        font-family: 'Roboto', sans-serif   
     }
 
     &:hover {

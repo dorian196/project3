@@ -1,18 +1,5 @@
 /* Menu1 */
 
-main {
-    @include media-max(1024px){
-       width: 100vw; 
-    }    
-}
-
-html {
-    @include media-max(1024px){
-        margin-left: -10px;
-    }  
-}
-
-
 .headmenu
 {
     display: flex;
@@ -44,7 +31,7 @@ html {
     & img {
         object-fit: cover;
         margin-top: 20px;
-        height: 226px;
+        height: 350px;
         width: 90vw;   
         min-width: 100%; 
         @include media-min(1024px){
@@ -64,14 +51,14 @@ html {
 
 .sectionmenu {
     border: 1px solid transparent;
-    border-radius: 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
     background-color: rgb(245, 245, 245);
-    margin-left: 40px;
     position: relative;
     bottom: 40px;
-    width: 90vw;   
-    min-width: 100%;  
-    margin-left: 0;
+    width: 90vw;
+    min-width: 100vw;    
+    margin: 0 0 -40px 0;
     @include media-min(1024px){
         min-width: 1000px;   
         max-width: 1000px;
@@ -81,15 +68,24 @@ html {
 
 /* Typographie */    
 
-    & h1, & h2 {
-        margin-left: 15px;
+    & h1{
+        font-size: 35px;
+        padding-left: 3vw;
     }
 
     & h2 {
         font-size: 20px;
-        margin-top: 50px;
+        margin: 50px 0 0 4.5vw;
+        
         border-bottom: 3px solid $color_tertiaire;
         width: 50px;
+        
+        @include media-min(1024px){
+            min-width: 50px;   
+            max-width: 50px;
+            width: 50px;
+            margin-left: 4vw;
+        }
     }
 
     & h3 {
@@ -100,32 +96,42 @@ html {
         margin: 0;
     }
 
+    & ul {
+        padding: 0 12px 0 3vw;
+        
+    }
+
     & li {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        width: 85vw;   
+        width: 95vw;   
         min-width: 100%; 
-        
+        margin: auto;
         @include media-min(1024px){
             min-width: 970px;   
             max-width: 970px;
             width: 970px;
-        } 
-        
+            padding-right: 3vw;
+        }     
     }
-}
 
-main {
-    @include media-max(1024px){
-       width: 100vw; 
-    }    
-}
 
-html {
-    @include media-max(1024px){
-        margin-left: -10px;
-    }  
+    & .container_overflow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    & .overflow1 {
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 8px;
+    }
+
+    & .overflow2 {
+        margin-top: 5px;
+        font-size: 17px;
+    }
 }
 

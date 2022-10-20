@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/css/style.css">
-    <link rel="stylesheet" href="./public/css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,10 +12,10 @@
     <title>Ohmyfood</title>
 </head>
 <body>
-    <header>
+    <header class="header_acceuil">
         <img src="./public/img/logo/ohmyfood.png" alt="logo ohmyfood">
     </header>
-    <div><i class="fa-solid fa-utensils"></i></div>
+    <div><i class="fa-solid fa-utensils utensils_loading"></i></div>
     <main>
         <div class="main_fonction">
             <div>
@@ -27,15 +26,15 @@
             </div>
             <div class="top">
                 <div class="txttop">
-                    <h2>Réservez le menu qui<br>vous convient</h2>
-                    <p>Découvrez des restaurants d'exception,<br>séléctionnés par nos soins.</p>
+                    <h2>Réservez le menu qui vous convient</h2>
+                    <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
                 </div>
                 <div class="btn_head">
-                    <p>Explorer nos restauarnts</p>
+                    <p>Explorer nos restaurants</p>
                 </div>
             </div>
             <div class="fonction">
-                <h2 class="titre_fonction">Fonctionnement</h2>
+                <h3 class="titre_fonction">Fonctionnement</h3>
                 <ul>
                     <li><a href="#"><h2><span>1</span><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</h2></a></li>
                     <li><a href="#"><h2><span>2</span><i class="fa-solid fa-list-ul"></i>Composez votre menu</h2></a></li>
@@ -48,7 +47,7 @@
                 <h2>Restaurants</h2>
                 <div class="container_menu">
                     <ul>
-                        <li><a href="./menu1.html"><img src="./public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Assiette gastronomique"><h3>La palette du gout</h3><p>Ménilmontant</p></a>
+                        <li><a href="./menu1.html"><img src="./public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Assiette gastronomique"><h3>La palette du goût</h3><p>Ménilmontant</p></a>
                             <div class="heart">
                                 <input type="checkbox" id="heart1" class="input">
                                 <label for="heart1" class="label"><i class="fa-solid fa-heart solid_heart"></i><i class="fa-regular fa-heart regular_heart"></i></label>
@@ -66,7 +65,7 @@
                                 Nouveau
                             </div>
                         </li>
-                        <li><a href="./menu3.html"><img src="./public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Assiette gastronomique"><h3>A la Francaise</h3><p>Cité Rouge</p></a>
+                        <li><a href="./menu3.html"><img src="./public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Assiette gastronomique"><h3>À la Française</h3><p>Cité Rouge</p></a>
                             <div class="heart">
                                 <input type="checkbox" id="heart3" class="input">
                                 <label for="heart3" class="label"><i class="fa-solid fa-heart solid_heart"></i><i class="fa-regular fa-heart regular_heart"></i></label>
@@ -83,7 +82,7 @@
             </section>
         </div>
     </main>
-    <footer>
+    <footer class="footer_acceuil">
         <h3>ohmyfood</h3>
         <ul>
             <li><a href="#"><i class="fa-solid fa-utensils utensils_footer"></i>Proposer un restaurant</a></li>

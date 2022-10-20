@@ -4,8 +4,10 @@ footer
 {
     background-color: rgb(60, 60, 60);
     width: 100vw;
-    min-width: 100%;
     
+    & ul {
+        padding-left: 20px;
+    }
     
     
 
@@ -14,7 +16,7 @@ footer
     }
 
     & h3 {
-        padding-left: 30px;
+        padding-left: 20px;
         color: white;    
     }
 

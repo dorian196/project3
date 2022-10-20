@@ -1,6 +1,6 @@
 
 
-.fa-utensils {
+.utensils_loading {
     font-size: 20vw;
     background: linear-gradient(to top right, $color_secondaire, $color_primaire);
     background-clip:text;
@@ -29,7 +29,7 @@
     }
 }
 
-.fa-utensils::after {
+.utensils_loading::after {
   content: "";
   position: absolute;
   background: rgb(255, 255, 255);
@@ -45,7 +45,7 @@
   }
 }
   
-.loading, header, footer, .main_fonction {
+.loading, .header_acceuil, .footer_acceuil, .main_fonction {
     opacity: 0;
     animation-name: load;
     animation-duration: 1s;

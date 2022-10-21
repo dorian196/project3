@@ -71,6 +71,7 @@
     & h1{
         font-size: 35px;
         padding-left: 3vw;
+        width: 70vw;
     }
 
     & h2 {
@@ -120,18 +121,21 @@
 
     & .container_overflow {
         display: flex;
-        flex-direction: column;
+        flex-direction: column;   
+        width: 70vw;
     }
+
+    
 
     & .overflow1 {
         font-weight: bold;
-        font-size: 20px;
+        font-size: 18px;
         margin-top: 8px;
     }
 
     & .overflow2 {
         margin-top: 5px;
-        font-size: 17px;
+        font-size: 15px;
     }
 }
 

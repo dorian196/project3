@@ -404,8 +404,8 @@ footer li {
 .sectionmenu .regular_heart_menu {
   font-size: 35px;
   color: rgb(100, 100, 100);
-  position: relative;
-  top: 35px;
+  position: absolute;
+  top: 60px;
   right: 50px;
   cursor: pointer;
 }
@@ -414,8 +414,8 @@ footer li {
   color: rgb(250, 250, 250);
   cursor: pointer;
   position: relative;
-  top: 35px;
-  right: 15px;
+  top: 40px;
+  right: 50px;
 }
 .sectionmenu .input_menu:checked + label .solid_heart_menu {
   background: linear-gradient(to top right, #FF79DA, #9356DC);
@@ -509,7 +509,7 @@ footer li {
   transition-delay: 0.1s;
 }
 .sectionmenu .input:checked + .label .container_overflow {
-  width: 58vw;
+  width: 50vw;
 }
 .sectionmenu .input:checked + .label .container_overflow .overflow1, .sectionmenu .input:checked + .label .container_overflow .overflow2 {
   text-overflow: ellipsis;
@@ -701,6 +701,7 @@ footer li {
 .sectionmenu h1 {
   font-size: 35px;
   padding-left: 3vw;
+  width: 70vw;
 }
 .sectionmenu h2 {
   font-size: 20px;
@@ -746,15 +747,16 @@ footer li {
 .sectionmenu .container_overflow {
   display: flex;
   flex-direction: column;
+  width: 70vw;
 }
 .sectionmenu .overflow1 {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 8px;
 }
 .sectionmenu .overflow2 {
   margin-top: 5px;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 /* themes */

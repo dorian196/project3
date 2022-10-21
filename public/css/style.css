@@ -69,8 +69,8 @@ header img {
 .top {
   border: 0px solid transparent;
   background-color: rgb(240, 240, 240);
-  height: 250px;
   width: 100vw;
+  padding-bottom: 50px;
 }
 
 .txttop {
@@ -119,6 +119,9 @@ input {
 }
 .fonction ul {
   padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
   width: 90vw;
   margin: auto;
@@ -128,14 +131,15 @@ input {
   border-radius: 35px;
   background-color: rgb(250, 250, 250);
   box-shadow: 0 2px 5px 3px rgb(240, 240, 240);
-  height: 100px;
+  height: 80px;
   width: 90vw;
-  margin: auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-top: 20px;
   font-size: 15px;
+  padding-left: 0px;
+  margin-left: 20px;
 }
 .fonction li:hover {
   background-color: rgba(146, 86, 220, 0.1019607843);
@@ -158,6 +162,8 @@ input {
   color: white;
   background-color: #9356DC;
   margin-right: 25px;
+  position: relative;
+  right: 15px;
 }
 .fonction i {
   margin-right: 20px;
@@ -503,7 +509,7 @@ footer li {
   transition-delay: 0.1s;
 }
 .sectionmenu .input:checked + .label .container_overflow {
-  width: 44vw;
+  width: 58vw;
 }
 .sectionmenu .input:checked + .label .container_overflow .overflow1, .sectionmenu .input:checked + .label .container_overflow .overflow2 {
   text-overflow: ellipsis;
@@ -698,9 +704,10 @@ footer li {
 }
 .sectionmenu h2 {
   font-size: 20px;
-  margin: 50px 0 0 4.5vw;
+  margin: 40px 0 0 4.5vw;
   border-bottom: 3px solid #99E2D0;
   width: 50px;
+  padding: 0 0 5px 0;
 }
 @media screen and (min-width: 1024px) {
   .sectionmenu h2 {

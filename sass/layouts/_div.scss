@@ -4,8 +4,8 @@
 {
     border: 0px solid transparent;
     background-color: rgb(240, 240, 240);
-    height: 250px;
     width: 100vw;
+    padding-bottom: 50px;
 }
 
 .txttop
@@ -13,6 +13,7 @@
     text-align: center;
     width: 90vw;
     margin: auto;
+
 
     & h2 {
         font-weight: bolder;

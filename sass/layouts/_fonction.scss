@@ -8,6 +8,9 @@
     
     & ul { 
         padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         align-items: center;
         width: 90vw;
         margin: auto;
@@ -19,14 +22,15 @@
         border-radius: 35px;
         background-color: rgb(250, 250, 250);
         box-shadow: 0 2px 5px 3px rgb(240, 240, 240);
-        height: 100px;
+        height: 80px;
         width: 90vw;
-        margin: auto;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         margin-top: 20px;
         font-size: 15px;  
+        padding-left: 0px;
+        margin-left: 20px;
 
         &:hover {
             background-color: #9256dc1a;
@@ -50,7 +54,10 @@
         padding: 5px 10px 5px 10px;
         color: white;
         background-color: $color-primaire;
-        margin-right: 25px;    
+        margin-right: 25px; 
+        position: relative;  
+        right: 15px;
+        
     }
 
     & i {

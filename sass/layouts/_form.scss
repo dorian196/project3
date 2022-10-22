@@ -4,7 +4,7 @@ form
 {
     text-align: center;
     border: 0px solid transparent;
-    height: 70px;
+    height: 40px;
     padding-bottom: 20px;
     width: 100vw;
     background-color: rgb(230, 230, 230);
@@ -17,10 +17,21 @@ form
 input
 {
     border: none;
-    width: 100px;
+    width: 120px;
     background-color: rgb(230, 230, 230);
+    color: black;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+#search::placeholder {
+    color: rgb(70, 70, 70);
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .fa-location-dot {
     padding-right: 15px;
+    margin-top: 20px;
+    color: rgb(61, 61, 61);
 }

@@ -69,13 +69,13 @@
 /* Typographie */    
 
     & h1{
-        font-size: 35px;
+        font-size: 30px;
         padding-left: 3vw;
         width: 70vw;
     }
 
     & h2 {
-        font-size: 20px;
+        font-size: 18px;
         margin: 40px 0 0 4.5vw;
         border-bottom: 3px solid $color_tertiaire;
         width: 50px;
@@ -131,11 +131,17 @@
         font-weight: bold;
         font-size: 18px;
         margin-top: 8px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
 
     & .overflow2 {
         margin-top: 5px;
         font-size: 15px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
 }
 

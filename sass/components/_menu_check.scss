@@ -11,15 +11,15 @@
 
 & .price {
     position: absolute;
-    right: 20px; bottom: 15px;
+    right: 20px; bottom: 13px;
     font-weight: bold;
     transition: all 1s;
-    
+    color: rgb(41, 41, 41);
 } 
 
 & .fa-circle-check {
     position: absolute;
-    right: -45px; bottom: 25px;
+    right: -45px; bottom: 22px;
     color: rgb(255, 255, 255);
     font-size: 30px;
     margin-right: 15px;
@@ -35,13 +35,13 @@
 & .label {
     display: inline-block;
     width: 95%; 
-    height: 84px; 
+    height: 75px; 
     cursor: pointer;
     border: 0px solid transparent;
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 2px 5px 3px rgb(230, 230, 230);
-    margin: 0 5px 20px 10px;
+    margin: 0 0px 20px 1vw;
     padding: 11px 0px 11px 10px;
     position: relative;
     overflow: hidden;
@@ -53,7 +53,7 @@
     position: absolute;
     right: -2px; bottom: -1px;
     width: 80px;
-    height: 84px;
+    height: 75px;
     border: 1px solid $color_tertiaire;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;

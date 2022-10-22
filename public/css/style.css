@@ -62,7 +62,7 @@ header {
   }
 }
 header img {
-  width: 200px;
+  width: 150px;
 }
 
 /* div */
@@ -71,6 +71,7 @@ header img {
   background-color: rgb(240, 240, 240);
   width: 100vw;
   padding-bottom: 50px;
+  padding-top: 30px;
 }
 
 .txttop {
@@ -79,20 +80,23 @@ header img {
   margin: auto;
 }
 .txttop h2 {
-  font-weight: bolder;
+  font-weight: 900;
   margin-top: -20px;
   padding: 20px;
+  font-size: 23px;
 }
 .txttop p {
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(92, 92, 92);
+  font-weight: 100;
+  margin-top: -20px;
 }
 
 /* form */
 form {
   text-align: center;
   border: 0px solid transparent;
-  height: 70px;
+  height: 40px;
   padding-bottom: 20px;
   width: 100vw;
   background-color: rgb(230, 230, 230);
@@ -104,12 +108,23 @@ form {
 
 input {
   border: none;
-  width: 100px;
+  width: 120px;
   background-color: rgb(230, 230, 230);
+  color: black;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+#search::placeholder {
+  color: rgb(70, 70, 70);
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .fa-location-dot {
   padding-right: 15px;
+  margin-top: 20px;
+  color: rgb(61, 61, 61);
 }
 
 /* fonction */
@@ -128,15 +143,15 @@ input {
 }
 .fonction li {
   border: 0px solid transparent;
-  border-radius: 35px;
+  border-radius: 25px;
   background-color: rgb(250, 250, 250);
-  box-shadow: 0 2px 5px 3px rgb(240, 240, 240);
-  height: 80px;
+  box-shadow: 0 2px 5px 3px rgb(230, 230, 230);
+  height: 70px;
   width: 90vw;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 25px;
   font-size: 15px;
   padding-left: 0px;
   margin-left: 20px;
@@ -155,10 +170,10 @@ input {
   }
 }
 .fonction span {
-  font-size: 15px;
+  font-size: 12px;
   border: 0px solid transparent;
   border-radius: 50%;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 8px 5px 8px;
   color: white;
   background-color: #9356DC;
   margin-right: 25px;
@@ -173,10 +188,11 @@ input {
   font-size: 18px;
 }
 .fonction h3 {
-  font-size: 25px;
+  font-size: 23px;
   width: 90vw;
   margin: auto;
-  padding-top: 20px;
+  padding-top: 50px;
+  padding-bottom: 10px;
 }
 @media screen and (min-width: 1024px) {
   .fonction h3 {
@@ -248,6 +264,9 @@ input {
   }
 }
 
+section h3 {
+  font-weight: 900;
+}
 section h3, section p {
   margin-bottom: -10px;
   margin-left: 10px;
@@ -257,7 +276,7 @@ section h2 {
   width: 90vw;
   margin: auto;
   padding-top: 60px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   margin-top: 80px;
 }
 @media screen and (min-width: 1024px) {
@@ -322,13 +341,13 @@ footer li {
 .btn_command {
   display: flex;
   justify-content: center;
-  width: 150px;
+  width: 180px;
   margin: auto;
   border: 0px solid transparent;
   border-radius: 50px;
   box-shadow: 0 2px 5px 3px rgb(220, 220, 220);
   background-color: #FF79DA;
-  padding: 10px 0 10px 0;
+  padding: 15px 5px 15px 5px;
   margin-bottom: 20px;
   background: linear-gradient(#FF79DA, #9356DC);
   cursor: pointer;
@@ -405,7 +424,7 @@ footer li {
   font-size: 35px;
   color: rgb(100, 100, 100);
   position: absolute;
-  top: 60px;
+  top: 50px;
   right: 50px;
   cursor: pointer;
 }
@@ -414,7 +433,7 @@ footer li {
   color: rgb(250, 250, 250);
   cursor: pointer;
   position: relative;
-  top: 40px;
+  top: 30px;
   right: 50px;
 }
 .sectionmenu .input_menu:checked + label .solid_heart_menu {
@@ -446,14 +465,15 @@ footer li {
 .sectionmenu .price {
   position: absolute;
   right: 20px;
-  bottom: 15px;
+  bottom: 13px;
   font-weight: bold;
   transition: all 1s;
+  color: rgb(41, 41, 41);
 }
 .sectionmenu .fa-circle-check {
   position: absolute;
   right: -45px;
-  bottom: 25px;
+  bottom: 22px;
   color: rgb(255, 255, 255);
   font-size: 30px;
   margin-right: 15px;
@@ -467,13 +487,13 @@ footer li {
 .sectionmenu .label {
   display: inline-block;
   width: 95%;
-  height: 84px;
+  height: 75px;
   cursor: pointer;
   border: 0px solid transparent;
   border-radius: 20px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 2px 5px 3px rgb(230, 230, 230);
-  margin: 0 5px 20px 10px;
+  margin: 0 0px 20px 1vw;
   padding: 11px 0px 11px 10px;
   position: relative;
   overflow: hidden;
@@ -484,7 +504,7 @@ footer li {
   right: -2px;
   bottom: -1px;
   width: 80px;
-  height: 84px;
+  height: 75px;
   border: 1px solid #99E2D0;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
@@ -699,12 +719,12 @@ footer li {
   }
 }
 .sectionmenu h1 {
-  font-size: 35px;
+  font-size: 30px;
   padding-left: 3vw;
   width: 70vw;
 }
 .sectionmenu h2 {
-  font-size: 20px;
+  font-size: 18px;
   margin: 40px 0 0 4.5vw;
   border-bottom: 3px solid #99E2D0;
   width: 50px;
@@ -753,10 +773,16 @@ footer li {
   font-weight: bold;
   font-size: 18px;
   margin-top: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .sectionmenu .overflow2 {
   margin-top: 5px;
   font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 /* themes */

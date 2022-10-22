@@ -6,6 +6,7 @@
     background-color: rgb(240, 240, 240);
     width: 100vw;
     padding-bottom: 50px;
+    padding-top: 30px;
 }
 
 .txttop
@@ -16,13 +17,16 @@
 
 
     & h2 {
-        font-weight: bolder;
+        font-weight: 900;
         margin-top: -20px;
         padding: 20px;
+        font-size: 23px;
     }
 
     & p {
-        font-size: 20px;
+        font-size: 18px;
         color: rgb(92, 92, 92);
+        font-weight: 100;
+        margin-top: -20px;
     }
 }

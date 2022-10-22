@@ -5,34 +5,11 @@
     animation-fill-mode: forwards;
 }
 
-.vignet2 {
-    animation-delay: 0.3s;
+@for $i from 1 through 10 {
+    .vignet#{$i} {
+        animation-delay: 0.3s*$i;
+    }
 }
-.vignet3 {
-    animation-delay: 0.6s;
-}
-.vignet4 {
-    animation-delay: 0.9s;
-}
-.vignet5 {
-    animation-delay: 1.2s;
-}
-.vignet6 {
-    animation-delay: 1.5s;
-}
-.vignet7 {
-    animation-delay: 1.8s;
-}
-.vignet8 {
-    animation-delay: 2.1s;
-}
-.vignet9 {
-    animation-delay: 2.4s;
-}
-.vignet10 {
-    animation-delay: 2.7s;
-}
-
 
 
 @keyframes vignet {

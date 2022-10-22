@@ -370,40 +370,44 @@ footer li {
   animation-fill-mode: forwards;
 }
 
-.vignet2 {
+.vignet1 {
   animation-delay: 0.3s;
 }
 
-.vignet3 {
+.vignet2 {
   animation-delay: 0.6s;
 }
 
-.vignet4 {
+.vignet3 {
   animation-delay: 0.9s;
 }
 
-.vignet5 {
+.vignet4 {
   animation-delay: 1.2s;
 }
 
-.vignet6 {
+.vignet5 {
   animation-delay: 1.5s;
 }
 
-.vignet7 {
+.vignet6 {
   animation-delay: 1.8s;
 }
 
-.vignet8 {
+.vignet7 {
   animation-delay: 2.1s;
 }
 
-.vignet9 {
+.vignet8 {
   animation-delay: 2.4s;
 }
 
-.vignet10 {
+.vignet9 {
   animation-delay: 2.7s;
+}
+
+.vignet10 {
+  animation-delay: 3s;
 }
 
 @keyframes vignet {
